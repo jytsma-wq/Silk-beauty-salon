@@ -1,0 +1,218 @@
+{
+  "site": {
+    "title": "Londra'nın Ödüllü Estetik Kliniği | Harley Street Injectables",
+    "description": "Harley Street'teki Londra'nın önde gelen cerrahi dışı estetik kliniği. Dünya standartlarında uzmanlar, son teknoloji tedaviler ve lüks bakım."
+  },
+  "nav": {
+    "treatments": "Tedaviler",
+    "conditions": "Cilt Sorunları",
+    "about": "Hakkımızda",
+    "pricelist": "Fiyat Listesi",
+    "offers": "Teklifler",
+    "contact": "İletişim",
+    "bookAppointment": "Randevu Al",
+    "faq": "SSS",
+    "press": "Basın",
+    "blog": "Blog",
+    "team": "Ekibimiz"
+  },
+  "header": {
+    "announcement": "Ödüllü | Londra'nın En İyi Kozmetik Klinigi | Vogue, Grazia, Vanity Fair'de yayınlandı"
+  },
+  "hero": {
+    "title": "Anti-Aging Uzmanları",
+    "subtitle": "Londra'nın Önde Gelen Estetik Kliniği",
+    "description": "Harley Street Injectables, doğal güzelliğinizi hassasiyet ve güvenle artırmak için dünya standartlarında uzmanları, son teknoloji tedavileri ve lüks bakımı bir araya getiriyor.",
+    "cta": {
+      "book": "Randevu Al",
+      "treatments": "Tedavileri Gör"
+    }
+  },
+  "treatments": {
+    "title": "Tedaviler",
+    "subtitle": "İhtiyaçlarınıza özel son teknoloji estetik tedaviler",
+    "learnMore": "Daha Fazla Bilgi",
+    "viewAll": "Tüm Tedavileri Gör",
+    "categories": {
+      "botox": "Botox Enjeksiyonları",
+      "fillers": "Dolgu Enjeksiyonları",
+      "laser": "Lazer Tedavileri",
+      "skin": "Cilt Tedavileri",
+      "skinLaxity": "Cilt Sıklığı Tedavileri",
+      "body": "Vücut Tedavileri",
+      "intimate": "Mahrem Tedaviler",
+      "facials": "Tıbbi Yüz Bakımları",
+      "diagnostic": "Tanı Testleri",
+      "hair": "Saç Tedavileri"
+    }
+  },
+  "conditions": {
+    "title": "Tedavi Ettiğimiz Cilt Sorunları",
+    "subtitle": "Cilt sorunlarınız için uzman çözümler",
+    "viewAll": "Tüm Sorunları Gör",
+    "items": {
+      "ageing": "Yaşlanan Cilt",
+      "acne": "Akne ve İzler",
+      "uneven": "Dengesiz Cilt Tonu",
+      "blemishes": "Lekeler",
+      "pigmentation": "Pigmentasyon",
+      "collagen": "Kolajen Uyarma",
+      "other": "Diğer Sorunlar"
+    }
+  },
+  "technologies": {
+    "title": "Son Teknoloji Cihazlar",
+    "subtitle": "En son ve en gelişmiş estetik teknolojilerini kullanıyoruz"
+  },
+  "testimonials": {
+    "title": "Müşterilerimiz Ne Diyor",
+    "subtitle": "Gerçek müşterilerden gerçek sonuçlar",
+    "viewAll": "Tüm Yorumları Gör"
+  },
+  "about": {
+    "title": "Hastaları ön planda tutmak ve mükemmel hizmet sunmak",
+    "description": "Harley Street Injectables, en iyi sonuçları elde etmek için en son teknolojileri kullanarak minimal invaziv, öncü kozmetik ve sağlık tedavileri sunmaktadır.",
+    "readMore": "Daha Fazla Oku",
+    "values": {
+      "title": "Değerlerimiz",
+      "excellence": "Mükemmellik",
+      "excellenceDesc": "Her tedavide mükemmellik için çabalıyoruz",
+      "safety": "Güvenlik",
+      "safetyDesc": "Güvenliğiniz en önemli önceliğimizdir",
+      "innovation": "İnovasyon",
+      "innovationDesc": "En son teknolojileri ve teknikleri kullanma"
+    }
+  },
+  "quickLinks": {
+    "faq": {
+      "title": "SSS",
+      "description": "Klinik ve tedavilerimiz hakkında en sık sorulan soruları okuyun."
+    },
+    "contact": {
+      "title": "İletişim",
+      "description": "Harley Street 106 numarada yer almaktayız, çalışma saatleri 9am–6.30pm."
+    },
+    "team": {
+      "title": "Ekibimiz",
+      "description": "Nitelikli personelimiz hakkında daha fazla bilgi edinin."
+    },
+    "press": {
+      "title": "Basın",
+      "description": "En son basın yayınlarımıza göz atın."
+    },
+    "learnMore": "Daha Fazla Bilgi"
+  },
+  "newsletter": {
+    "title": "Güncel Kalın",
+    "description": "Haber ve güncellemeler almak için e-posta adresinizle kaydolun.",
+    "placeholder": "E-posta Adresi",
+    "subscribe": "Abone Ol",
+    "success": "Abone olduğunuz için teşekkürler!"
+  },
+  "footer": {
+    "description": "Harley Street'teki Londra'nın önde gelen cerrahi dışı estetik kliniği.",
+    "quickLinks": "Hızlı Linkler",
+    "treatments": "Tedaviler",
+    "conditions": "Cilt Sorunları",
+    "contact": "İletişim Bilgileri",
+    "address": "Harley Street 106, Londra W1G 7JE",
+    "phone": "Tel: 0345 548 5658",
+    "email": "info@harleystreetinjectables.com",
+    "openingHours": "Çalışma Saatleri",
+    "hours": {
+      "monFri": "Pzt-Cum: 9am - 6:30pm",
+      "satSun": "Cmt-Paz: 9:30am - 5pm"
+    },
+    "social": "Bizi Takip Edin",
+    "copyright": "© 2024 Harley Street Injectables. Tüm hakları saklıdır.",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Şartları"
+  },
+  "contact": {
+    "title": "Bize Ulaşın",
+    "subtitle": "Ekibimizle iletişime geçin",
+    "form": {
+      "name": "Ad Soyad",
+      "email": "E-posta Adresi",
+      "phone": "Telefon Numarası",
+      "message": "Mesajınız",
+      "submit": "Gönder",
+      "success": "Teşekkürler! En kısa sürede size dönüş yapacağız."
+    },
+    "info": {
+      "title": "Bizi Ziyaret Edin",
+      "address": "Harley Street 106",
+      "city": "Londra W1G 7JE",
+      "phone": "0345 548 5658",
+      "email": "info@harleystreetinjectables.com"
+    }
+  },
+  "faq": {
+    "title": "Sıkça Sorulan Sorular",
+    "subtitle": "Tedavilerimiz hakkında soruların yanıtlarını bulun"
+  },
+  "prices": {
+    "title": "Fiyat Listesi",
+    "subtitle": "Tüm tedavilerimiz için şeffaf fiyatlandırma",
+    "treatment": "Tedavi",
+    "price": "Fiyat",
+    "from": "Başlangıç"
+  },
+  "offers": {
+    "title": "Özel Teklifler",
+    "subtitle": "Mevcut promosyonlarımızdan yararlanın",
+    "bookNow": "Randevu Al",
+    "expires": "Son Tarih"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Son haberler ve makaleler",
+    "readMore": "Devamını Oku"
+  },
+  "press": {
+    "title": "Basın ve Medya",
+    "subtitle": "Yayınlandığı yerler",
+    "features": "Basın Yayınları"
+  },
+  "team": {
+    "title": "Ekibimiz",
+    "subtitle": "Uzman pratisyenlerimizle tanışın",
+    "bookWith": "Randevu Al"
+  },
+  "treatmentPage": {
+    "bookNow": "Bu Tedaviyi Randevu Al",
+    "backTo": "Tedavilere Dön",
+    "benefits": "Faydalar",
+    "whatToExpect": "Beklentiler",
+    "recovery": "İyileşme ve Bakım",
+    "price": "Fiyat",
+    "duration": "Tedavi Süresi",
+    "results": "Sonuçların Süresi"
+  },
+  "conditionPage": {
+    "title": "Cilt Sorunu",
+    "backTo": "Cilt Sorunlarına Dön",
+    "symptoms": "Belirtiler",
+    "causes": "Nedenler",
+    "treatments": "Önerilen Tedaviler",
+    "bookConsultation": "Konsültasyon Randevusu Al"
+  },
+  "language": {
+    "select": "Dil Seçin",
+    "en": "English",
+    "ka": "ქართული",
+    "ru": "Русский",
+    "tr": "Türkçe",
+    "ar": "العربية",
+    "he": "עברית"
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Bir hata oluştu",
+    "close": "Kapat",
+    "next": "Sonraki",
+    "previous": "Önceki",
+    "viewAll": "Tümünü Gör",
+    "learnMore": "Daha Fazla Bilgi"
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "site": {
+    "title": "Award-Winning Aesthetic Clinic in London | Harley Street Injectables",
+    "description": "London's leading non-surgical aesthetic clinic at 106 Harley Street. World-class practitioners, cutting-edge treatments & luxury care."
+  },
+  "nav": {
+    "treatments": "Treatments",
+    "conditions": "Conditions",
+    "about": "About",
+    "pricelist": "Price List",
+    "offers": "Offers",
+    "contact": "Contact",
+    "bookAppointment": "Book Appointment",
+    "faq": "FAQ",
+    "press": "Press",
+    "blog": "Blog",
+    "team": "Our Team"
+  },
+  "header": {
+    "announcement": "Award Winning | Voted London's top Cosmetic Clinic | Featured in Vogue, Grazia, Vanity Fair"
+  },
+  "hero": {
+    "title": "Anti-Ageing Specialists",
+    "subtitle": "London's Leading Aesthetic Clinic",
+    "description": "Harley Street Injectables brings together world-class practitioners, cutting-edge treatments & luxury care to enhance your natural beauty with precision & confidence.",
+    "cta": {
+      "book": "Book Appointment",
+      "treatments": "View Treatments"
+    }
+  },
+  "treatments": {
+    "title": "Treatments",
+    "subtitle": "Cutting-edge aesthetic treatments tailored to your needs",
+    "learnMore": "Learn More",
+    "viewAll": "View All Treatments",
+    "categories": {
+      "botox": "Botox Injectables",
+      "fillers": "Dermal Filler Injectables",
+      "laser": "Laser Treatments",
+      "skin": "Skin Treatments",
+      "skinLaxity": "Skin Laxity Treatments",
+      "body": "Body Treatments",
+      "intimate": "Intimate Treatments",
+      "facials": "Medical Facials",
+      "diagnostic": "Diagnostic Tests",
+      "hair": "Hair Treatments"
+    }
+  },
+  "conditions": {
+    "title": "Conditions We Treat",
+    "subtitle": "Expert solutions for your skin concerns",
+    "viewAll": "View All Conditions",
+    "items": {
+      "ageing": "Ageing Skin",
+      "acne": "Acne & Scarring",
+      "uneven": "Uneven Skin Tone",
+      "blemishes": "Blemishes",
+      "pigmentation": "Pigmentation",
+      "collagen": "Collagen Stimulating",
+      "other": "Other Conditions"
+    }
+  },
+  "technologies": {
+    "title": "Cutting-Edge Technologies",
+    "subtitle": "We use the latest and most advanced aesthetic technologies"
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Real results from real clients",
+    "viewAll": "View All Testimonials"
+  },
+  "about": {
+    "title": "Putting patients first and delivering exceptional service",
+    "description": "Harley Street Injectables provides a range of minimally invasive, pioneering cosmetic and healthcare treatments using the latest technology to achieve the best results.",
+    "readMore": "Read More",
+    "values": {
+      "title": "Our Values",
+      "excellence": "Excellence",
+      "excellenceDesc": "We strive for excellence in every treatment",
+      "safety": "Safety",
+      "safetyDesc": "Your safety is our top priority",
+      "innovation": "Innovation",
+      "innovationDesc": "Using the latest technologies and techniques"
+    }
+  },
+  "quickLinks": {
+    "faq": {
+      "title": "FAQ",
+      "description": "Read some of the most frequently asked questions about the clinic and our treatments."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Located on Harley Street at number 106, opening hours are 9am–6.30pm."
+    },
+    "team": {
+      "title": "Our Team",
+      "description": "Find out more about our skilled members of staff and how they can best help you."
+    },
+    "press": {
+      "title": "Press",
+      "description": "Why not take a look at our most recent Press features and see what they're saying about us."
+    },
+    "learnMore": "Learn More"
+  },
+  "newsletter": {
+    "title": "Stay Updated",
+    "description": "Sign up with your email address to receive news and updates.",
+    "placeholder": "Email Address",
+    "subscribe": "Subscribe",
+    "success": "Thank you for subscribing!"
+  },
+  "footer": {
+    "description": "London's leading non-surgical aesthetic clinic at 106 Harley Street.",
+    "quickLinks": "Quick Links",
+    "treatments": "Treatments",
+    "conditions": "Conditions",
+    "contact": "Contact Info",
+    "address": "106 Harley Street, London W1G 7JE",
+    "phone": "Tel: 0345 548 5658",
+    "email": "info@harleystreetinjectables.com",
+    "openingHours": "Opening Hours",
+    "hours": {
+      "monFri": "Mon-Fri: 9am - 6:30pm",
+      "satSun": "Sat-Sun: 9:30am - 5pm"
+    },
+    "social": "Follow Us",
+    "copyright": "© 2024 Harley Street Injectables. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "success": "Thank you! We will get back to you soon."
+    },
+    "info": {
+      "title": "Visit Us",
+      "address": "106 Harley Street",
+      "city": "London W1G 7JE",
+      "phone": "0345 548 5658",
+      "email": "info@harleystreetinjectables.com"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about our treatments"
+  },
+  "prices": {
+    "title": "Price List",
+    "subtitle": "Transparent pricing for all our treatments",
+    "treatment": "Treatment",
+    "price": "Price",
+    "from": "From"
+  },
+  "offers": {
+    "title": "Special Offers",
+    "subtitle": "Take advantage of our current promotions",
+    "bookNow": "Book Now",
+    "expires": "Expires"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Latest news and insights",
+    "readMore": "Read More"
+  },
+  "press": {
+    "title": "Press & Media",
+    "subtitle": "As featured in",
+    "features": "Press Features"
+  },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "Meet our expert practitioners",
+    "bookWith": "Book with"
+  },
+  "treatmentPage": {
+    "bookNow": "Book This Treatment",
+    "backTo": "Back to Treatments",
+    "benefits": "Benefits",
+    "whatToExpect": "What to Expect",
+    "recovery": "Recovery & Aftercare",
+    "price": "Price",
+    "duration": "Treatment Duration",
+    "results": "Results Last"
+  },
+  "conditionPage": {
+    "title": "Condition",
+    "backTo": "Back to Conditions",
+    "symptoms": "Symptoms",
+    "causes": "Causes",
+    "treatments": "Recommended Treatments",
+    "bookConsultation": "Book a Consultation"
+  },
+  "language": {
+    "select": "Select Language",
+    "en": "English",
+    "ka": "ქართული",
+    "ru": "Русский",
+    "tr": "Türkçe",
+    "ar": "العربية",
+    "he": "עברית"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "close": "Close",
+    "next": "Next",
+    "previous": "Previous",
+    "viewAll": "View All",
+    "learnMore": "Learn More"
+  }
+}

@@ -1,7 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link, useRouter, usePathname } from '@/i18n/routing';
 import { Menu, X, ChevronDown, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -9,8 +10,10 @@ import { siteConfig } from '@/data/site-config';
 import { treatmentCategories } from '@/data/treatments';
 import { conditions } from '@/data/conditions';
 import { cn } from '@/lib/utils';
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 export function Header() {
+  const t = useTranslations('nav');
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -25,7 +28,7 @@ export function Header() {
 
   const navItems = [
     {
-      name: 'Treatments',
+      name: t('treatments'),
       href: '/treatments',
       hasDropdown: true,
       dropdownContent: (
@@ -52,7 +55,7 @@ export function Header() {
                       href={`/treatments#${category.slug}`}
                       className="text-sm font-medium text-gold hover:underline"
                     >
-                      View all {category.name} →
+                      View all →
                     </Link>
                   </li>
                 )}
@@ -63,7 +66,7 @@ export function Header() {
       ),
     },
     {
-      name: 'Conditions',
+      name: t('conditions'),
       href: '/conditions',
       hasDropdown: true,
       dropdownContent: (
@@ -93,7 +96,7 @@ export function Header() {
       ),
     },
     {
-      name: 'About',
+      name: t('about'),
       href: '/about',
       hasDropdown: true,
       dropdownContent: (
@@ -104,15 +107,7 @@ export function Header() {
                 href="/about"
                 className="block p-2 rounded hover:bg-secondary transition-colors hover:text-gold"
               >
-                Our Story
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/about#team"
-                className="block p-2 rounded hover:bg-secondary transition-colors hover:text-gold"
-              >
-                Meet the Team
+                {t('team')}
               </Link>
             </li>
             <li>
@@ -120,7 +115,7 @@ export function Header() {
                 href="/media-press"
                 className="block p-2 rounded hover:bg-secondary transition-colors hover:text-gold"
               >
-                Press & Media
+                {t('press')}
               </Link>
             </li>
             <li>
@@ -128,16 +123,16 @@ export function Header() {
                 href="/blog"
                 className="block p-2 rounded hover:bg-secondary transition-colors hover:text-gold"
               >
-                Blog
+                {t('blog')}
               </Link>
             </li>
           </ul>
         </div>
       ),
     },
-    { name: 'Price List', href: '/pricelist', hasDropdown: false },
-    { name: 'Offers', href: '/offers', hasDropdown: false },
-    { name: 'Contact', href: '/contact-us', hasDropdown: false },
+    { name: t('pricelist'), href: '/pricelist', hasDropdown: false },
+    { name: t('offers'), href: '/offers', hasDropdown: false },
+    { name: t('contact'), href: '/contact-us', hasDropdown: false },
   ];
 
   return (
@@ -212,7 +207,10 @@ export function Header() {
           </nav>
 
           {/* Right Side Actions */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 md:gap-4">
+            {/* Language Switcher */}
+            <LanguageSwitcher />
+
             {/* Phone Number - Desktop Only */}
             <a
               href={`tel:${siteConfig.contact.phone.replace(/\s/g, '')}`}
@@ -228,7 +226,7 @@ export function Header() {
               className="btn-gold hidden md:inline-flex"
             >
               <a href={siteConfig.bookingUrl} target="_blank" rel="noopener noreferrer">
-                Book Appointment
+                {t('bookAppointment')}
               </a>
             </Button>
 
@@ -252,22 +250,8 @@ export function Header() {
 }
 
 function MobileNav({ onClose }: { onClose: () => void }) {
+  const t = useTranslations('nav');
   const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
-
-  const mobileNavItems = [
-    {
-      name: 'Treatments',
-      categories: treatmentCategories.map(cat => ({
-        name: cat.name,
-        slug: cat.slug,
-        treatments: cat.treatments,
-      })),
-    },
-    {
-      name: 'Conditions',
-      conditions: conditions,
-    },
-  ];
 
   return (
     <div className="h-full flex flex-col">
@@ -281,9 +265,12 @@ function MobileNav({ onClose }: { onClose: () => void }) {
             Injectables
           </span>
         </div>
-        <Button variant="ghost" size="icon" onClick={onClose}>
-          <X className="w-5 h-5" />
-        </Button>
+        <div className="flex items-center gap-2">
+          <LanguageSwitcher />
+          <Button variant="ghost" size="icon" onClick={onClose}>
+            <X className="w-5 h-5" />
+          </Button>
+        </div>
       </div>
 
       {/* Navigation Content */}
@@ -294,7 +281,7 @@ function MobileNav({ onClose }: { onClose: () => void }) {
             onClick={() => setExpandedCategory(expandedCategory === 'treatments' ? null : 'treatments')}
             className="w-full flex items-center justify-between p-4 font-medium hover:bg-secondary transition-colors"
           >
-            Treatments
+            {t('treatments')}
             <ChevronDown
               className={cn(
                 'w-5 h-5 transition-transform',
@@ -334,7 +321,7 @@ function MobileNav({ onClose }: { onClose: () => void }) {
             onClick={() => setExpandedCategory(expandedCategory === 'conditions' ? null : 'conditions')}
             className="w-full flex items-center justify-between p-4 font-medium hover:bg-secondary transition-colors"
           >
-            Conditions
+            {t('conditions')}
             <ChevronDown
               className={cn(
                 'w-5 h-5 transition-transform',
@@ -361,92 +348,34 @@ function MobileNav({ onClose }: { onClose: () => void }) {
           )}
         </div>
 
-        {/* About Section */}
-        <div className="border-b">
-          <button
-            onClick={() => setExpandedCategory(expandedCategory === 'about' ? null : 'about')}
-            className="w-full flex items-center justify-between p-4 font-medium hover:bg-secondary transition-colors"
-          >
-            About
-            <ChevronDown
-              className={cn(
-                'w-5 h-5 transition-transform',
-                expandedCategory === 'about' && 'rotate-180'
-              )}
-            />
-          </button>
-          {expandedCategory === 'about' && (
-            <div className="pb-4 px-4">
-              <ul className="space-y-1">
-                <li>
-                  <Link
-                    href="/about"
-                    onClick={onClose}
-                    className="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    Our Story
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/about#team"
-                    onClick={onClose}
-                    className="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    Meet the Team
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/media-press"
-                    onClick={onClose}
-                    className="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    Press & Media
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/blog"
-                    onClick={onClose}
-                    className="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    Blog
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          )}
-        </div>
-
         {/* Simple Links */}
         <Link
           href="/pricelist"
           onClick={onClose}
           className="block p-4 font-medium hover:bg-secondary transition-colors border-b"
         >
-          Price List
+          {t('pricelist')}
         </Link>
         <Link
           href="/offers"
           onClick={onClose}
           className="block p-4 font-medium hover:bg-secondary transition-colors border-b"
         >
-          Offers
+          {t('offers')}
         </Link>
         <Link
           href="/contact-us"
           onClick={onClose}
           className="block p-4 font-medium hover:bg-secondary transition-colors border-b"
         >
-          Contact
+          {t('contact')}
         </Link>
         <Link
           href="/faq"
           onClick={onClose}
           className="block p-4 font-medium hover:bg-secondary transition-colors border-b"
         >
-          FAQ
+          {t('faq')}
         </Link>
       </div>
 
@@ -457,7 +386,7 @@ function MobileNav({ onClose }: { onClose: () => void }) {
           className="w-full btn-gold"
         >
           <a href={siteConfig.bookingUrl} target="_blank" rel="noopener noreferrer">
-            Book Appointment
+            {t('bookAppointment')}
           </a>
         </Button>
         <div className="mt-4 text-center">

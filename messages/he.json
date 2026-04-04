@@ -1,0 +1,218 @@
+{
+  "site": {
+    "title": "מרפאת אסתטיקה זוכת פרסים בלונדון | Harley Street Injectables",
+    "description": "מרפאת האסתטיקה המובילה בלונדון ללא ניתוחים ברחוב הארלי. מומחים ברמה עולמית, טיפולים מתקדמים ושירות יוקרתי."
+  },
+  "nav": {
+    "treatments": "טיפולים",
+    "conditions": "מצבי עור",
+    "about": "אודות",
+    "pricelist": "מחירון",
+    "offers": "הצעות",
+    "contact": "צור קשר",
+    "bookAppointment": "קבע תור",
+    "faq": "שאלות נפוצות",
+    "press": "עיתונות",
+    "blog": "בלוג",
+    "team": "הצוות שלנו"
+  },
+  "header": {
+    "announcement": "זוכת פרסים | מרפאת הקוסמטיקה המובילה בלונדון | פורסם ב-Vogue, Grazia, Vanity Fair"
+  },
+  "hero": {
+    "title": "מומחי אנטי-אייג'ינג",
+    "subtitle": "מרפאת האסתטיקה המובילה בלונדון",
+    "description": "Harley Street Injectables מביאה יחד מומחים ברמה עולמית, טיפולים מתקדמים ושירות יוקרתי להעצמת היופי הטבעי שלך בדיוק ובביטחון.",
+    "cta": {
+      "book": "קבע תור",
+      "treatments": "צפה בטיפולים"
+    }
+  },
+  "treatments": {
+    "title": "טיפולים",
+    "subtitle": "טיפולי אסתטיקה מתקדמים המותאמים לצרכים שלך",
+    "learnMore": "למד עוד",
+    "viewAll": "צפה בכל הטיפולים",
+    "categories": {
+      "botox": "הזרקות בוטוקס",
+      "fillers": "מילוי דרמלי",
+      "laser": "טיפולי לייזר",
+      "skin": "טיפולי עור",
+      "skinLaxity": "טיפולי מתיחות עור",
+      "body": "טיפולי גוף",
+      "intimate": "טיפולים אינטימיים",
+      "facials": "טיפולי פנים רפואיים",
+      "diagnostic": "בדיקות אבחון",
+      "hair": "טיפולי שיער"
+    }
+  },
+  "conditions": {
+    "title": "מצבים שאנו מטפלים בהם",
+    "subtitle": "פתרונות מומחים לבעיות העור שלך",
+    "viewAll": "צפה בכל המצבים",
+    "items": {
+      "ageing": "עור מזדקן",
+      "acne": "אקנה וצלקות",
+      "uneven": "גוון עור לא אחיד",
+      "blemishes": "חוסרים בעור",
+      "pigmentation": "פיגמנטציה",
+      "collagen": "גירוי קולגן",
+      "other": "מצבים אחרים"
+    }
+  },
+  "technologies": {
+    "title": "טכנולוגיות מתקדמות",
+    "subtitle": "אנו משתמשים בטכנולוגיות האסתטיות החדשות והמתקדמות ביותר"
+  },
+  "testimonials": {
+    "title": "מה הלקוחות שלנו אומרים",
+    "subtitle": "תוצאות אמיתיות מלקוחות אמיתיים",
+    "viewAll": "צפה בכל ההמלצות"
+  },
+  "about": {
+    "title": "מטיפולים במטופלים בראש ומספקים שירות יוצא דופן",
+    "description": "Harley Street Injectables מספקת מגוון טיפולים קוסמטיים ורפואיים חלוציים זעיר פולשניים באמצעות הטכנולוגיה החדשה ביותר להשגת התוצאות הטובות ביותר.",
+    "readMore": "קרא עוד",
+    "values": {
+      "title": "הערכים שלנו",
+      "excellence": "מצוינות",
+      "excellenceDesc": "אנו שואפים למצוינות בכל טיפול",
+      "safety": "בטיחות",
+      "safetyDesc": "הבטיחות שלך היא העדיפות העליונה שלנו",
+      "innovation": "חדשנות",
+      "innovationDesc": "שימוש בטכנולוגיות וטכניקות החדשות ביותר"
+    }
+  },
+  "quickLinks": {
+    "faq": {
+      "title": "שאלות נפוצות",
+      "description": "קרא את השאלות הנפוצות ביותר לגבי המרפאה והטיפולים שלנו."
+    },
+    "contact": {
+      "title": "צור קשר",
+      "description": "ממוקמים ברחוב הארלי 106, שעות פתיחה 9am–6.30pm."
+    },
+    "team": {
+      "title": "הצוות שלנו",
+      "description": "גלה עוד על הצוות המיומן שלנו."
+    },
+    "press": {
+      "title": "עיתונות",
+      "description": "הצצה לכתבות האחרונות עלינו."
+    },
+    "learnMore": "למד עוד"
+  },
+  "newsletter": {
+    "title": "הישאר מעודכן",
+    "description": "הירשם עם כתובת האימייל שלך לקבלת חדשות ועדכונים.",
+    "placeholder": "כתובת אימייל",
+    "subscribe": "הירשם",
+    "success": "תודה שנרשמת!"
+  },
+  "footer": {
+    "description": "מרפאת האסתטיקה המובילה בלונדון ללא ניתוחים ברחוב הארלי.",
+    "quickLinks": "קישורים מהירים",
+    "treatments": "טיפולים",
+    "conditions": "מצבי עור",
+    "contact": "פרטי קשר",
+    "address": "רחוב הארלי 106, לונדון W1G 7JE",
+    "phone": "טל: 0345 548 5658",
+    "email": "info@harleystreetinjectables.com",
+    "openingHours": "שעות פתיחה",
+    "hours": {
+      "monFri": "ב'-שישי: 9am - 6:30pm",
+      "satSun": "ש'-א': 9:30am - 5pm"
+    },
+    "social": "עקבו אחרינו",
+    "copyright": "© 2024 Harley Street Injectables. כל הזכויות שמורות.",
+    "privacy": "מדיניות פרטיות",
+    "terms": "תנאי שימוש"
+  },
+  "contact": {
+    "title": "צור קשר",
+    "subtitle": "צור קשר עם הצוות שלנו",
+    "form": {
+      "name": "שם מלא",
+      "email": "כתובת אימייל",
+      "phone": "מספר טלפון",
+      "message": "ההודעה שלך",
+      "submit": "שלח",
+      "success": "תודה! נחזור אליך בקרוב."
+    },
+    "info": {
+      "title": "בקר אותנו",
+      "address": "רחוב הארלי 106",
+      "city": "לונדון W1G 7JE",
+      "phone": "0345 548 5658",
+      "email": "info@harleystreetinjectables.com"
+    }
+  },
+  "faq": {
+    "title": "שאלות נפוצות",
+    "subtitle": "מצא תשובות לשאלות על הטיפולים שלנו"
+  },
+  "prices": {
+    "title": "מחירון",
+    "subtitle": "תמחור שקוף לכל הטיפולים שלנו",
+    "treatment": "טיפול",
+    "price": "מחיר",
+    "from": "החל מ-"
+  },
+  "offers": {
+    "title": "הצעות מיוחדות",
+    "subtitle": "נצל את המבצעים הנוכחיים שלנו",
+    "bookNow": "קבע תור",
+    "expires": "פג תוקף"
+  },
+  "blog": {
+    "title": "בלוג",
+    "subtitle": "חדשות ומאמרים אחרונים",
+    "readMore": "קרא עוד"
+  },
+  "press": {
+    "title": "עיתונות ומדיה",
+    "subtitle": "כפי שפורסם ב",
+    "features": "כתבות עיתונות"
+  },
+  "team": {
+    "title": "הצוות שלנו",
+    "subtitle": "הכר את המומחים שלנו",
+    "bookWith": "קבע תור עם"
+  },
+  "treatmentPage": {
+    "bookNow": "קבע תור לטיפול זה",
+    "backTo": "חזרה לטיפולים",
+    "benefits": "יתרונות",
+    "whatToExpect": "מה לצפות",
+    "recovery": "החלמה וטיפול",
+    "price": "מחיר",
+    "duration": "משך הטיפול",
+    "results": "משך התוצאות"
+  },
+  "conditionPage": {
+    "title": "מצב",
+    "backTo": "חזרה למצבים",
+    "symptoms": "תסמינים",
+    "causes": "גורמים",
+    "treatments": "טיפולים מומלצים",
+    "bookConsultation": "קבע ייעוץ"
+  },
+  "language": {
+    "select": "בחר שפה",
+    "en": "English",
+    "ka": "ქართული",
+    "ru": "Русский",
+    "tr": "Türkçe",
+    "ar": "العربية",
+    "he": "עברית"
+  },
+  "common": {
+    "loading": "טוען...",
+    "error": "אירעה שגיאה",
+    "close": "סגור",
+    "next": "הבא",
+    "previous": "הקודם",
+    "viewAll": "צפה בכל",
+    "learnMore": "למד עוד"
+  }
+}
