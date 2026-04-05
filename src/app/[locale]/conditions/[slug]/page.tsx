@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ChevronRight, Check, ArrowRight } from 'lucide-react';
@@ -17,12 +18,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   if (!condition) {
     return {
-      title: 'Condition Not Found | Harley Street Injectables',
+      title: 'Condition Not Found | Silk Beauty Salon',
     };
   }
 
   return {
-    title: `${condition.name} | Harley Street Injectables`,
+    title: `${condition.name} | Silk Beauty Salon`,
     description: condition.shortDescription,
   };
 }
@@ -82,11 +83,14 @@ export default async function ConditionPage({ params }: Props) {
               </Button>
             </div>
 
-            <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
-              <img
+            <div className="relative aspect-4/3 rounded-lg overflow-hidden">
+              <Image
                 src={condition.image}
                 alt={condition.name}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                priority
               />
             </div>
           </div>
@@ -124,7 +128,7 @@ export default async function ConditionPage({ params }: Props) {
                   <div className="grid sm:grid-cols-2 gap-3">
                     {condition.symptoms.map((symptom, index) => (
                       <div key={index} className="flex items-start gap-3 p-4 bg-secondary rounded-lg">
-                        <Check className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-gold mt-0.5 shrink-0" />
                         <span className="text-sm">{symptom}</span>
                       </div>
                     ))}
@@ -144,7 +148,7 @@ export default async function ConditionPage({ params }: Props) {
                   <ul className="space-y-2">
                     {condition.causes.map((cause, index) => (
                       <li key={index} className="flex items-start gap-3">
-                        <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2 flex-shrink-0" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2 shrink-0" />
                         <span className="text-muted-foreground">{cause}</span>
                       </li>
                     ))}
@@ -164,7 +168,7 @@ export default async function ConditionPage({ params }: Props) {
                   <div className="grid sm:grid-cols-2 gap-3">
                     {condition.treatments.map((treatment, index) => (
                       <div key={index} className="flex items-start gap-3 p-4 border border-border rounded-lg">
-                        <ArrowRight className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
+                        <ArrowRight className="w-5 h-5 text-gold mt-0.5 shrink-0" />
                         <span className="text-sm">{treatment}</span>
                       </div>
                     ))}
@@ -237,10 +241,12 @@ export default async function ConditionPage({ params }: Props) {
                   className="group bg-white rounded-lg overflow-hidden border border-border card-hover"
                 >
                   <div className="relative h-48 overflow-hidden">
-                    <img
+                    <Image
                       src={treatment.image}
                       alt={treatment.name}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                   </div>
                   <div className="p-4">

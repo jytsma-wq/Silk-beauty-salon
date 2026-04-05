@@ -5,7 +5,7 @@ import { siteConfig } from '@/data/site-config';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
-  title: 'About Us | Harley Street Injectables',
+  title: 'About Us | Silk Beauty Salon',
   description: 'Learn about our award-winning aesthetic clinic and meet our team of expert practitioners.',
 };
 
@@ -75,7 +75,7 @@ export default function AboutPage() {
                 Our Story
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Harley Street Injectables was founded with a simple vision: to provide the highest quality aesthetic treatments in a luxurious, welcoming environment. Located on the prestigious Harley Street, our clinic brings together some of London's most talented aesthetic practitioners.
+                Silk Beauty Salon was founded with a simple vision: to provide the highest quality aesthetic treatments in a luxurious, welcoming environment. Located on Zurab Gorgiladze Street in Batumi, our clinic brings together some of Georgia's most talented aesthetic practitioners.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 We believe that everyone deserves to feel confident and beautiful. Our approach focuses on enhancing your natural features rather than changing who you are. We take pride in our subtle, refined results that help you look like the best version of yourself.
@@ -84,10 +84,10 @@ export default function AboutPage() {
                 From the moment you step into our clinic, you'll experience the difference. Our commitment to excellence extends beyond our treatments to every aspect of your visit, from our luxurious clinic space to our warm, attentive team.
               </p>
             </div>
-            <div className="relative aspect-[4/5] rounded-lg overflow-hidden">
+            <div className="relative aspect-4/5 rounded-lg overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80"
-                alt="Harley Street Injectables Clinic"
+                alt="Silk Beauty Salon Clinic"
                 className="w-full h-full object-cover"
               />
             </div>

@@ -1,0 +1,7 @@
+Fix the most critical issues immediately:
+
+1. Change all "Harley Street Injectables" to "Silk Beauty Salon" in metadata
+2. Create error.tsx and not-found.tsx files
+3. Create /careers page that's linked in footer
+
+These are breaking the site's branding and navigation.

@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
-  title: 'FAQ | Harley Street Injectables',
+  title: 'FAQ | Silk Beauty Salon',
   description: 'Find answers to frequently asked questions about our treatments, booking, and clinic.',
 };
 

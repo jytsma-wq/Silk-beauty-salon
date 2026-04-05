@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { ChevronRight } from 'lucide-react';
 import { Link } from '@/i18n/routing';
@@ -57,11 +58,14 @@ export function AboutSection() {
 
           {/* Image */}
           <div className="relative">
-            <div className="aspect-[4/5] rounded-lg overflow-hidden">
-              <img
+            <div className="aspect-[4/5] rounded-lg overflow-hidden relative">
+              <Image
                 src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80"
                 alt="Silk Beauty Salon"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                priority
               />
             </div>
             {/* Decorative Element */}

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import { ChevronRight } from 'lucide-react';
 import { treatmentCategories } from '@/data/treatments';
 import { siteConfig } from '@/data/site-config';
@@ -6,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Link } from '@/i18n/routing';
 
 export const metadata: Metadata = {
-  title: 'Treatments | Harley Street Injectables',
+  title: 'Treatments | Silk Beauty Salon',
   description: 'Explore our comprehensive range of premium aesthetic treatments.',
 };
 
@@ -68,12 +69,14 @@ export default function TreatmentsPage() {
                     className="group bg-white border border-border rounded-lg overflow-hidden card-hover"
                   >
                     <div className="relative h-48 overflow-hidden">
-                      <img
+                      <Image
                         src={treatment.image}
                         alt={treatment.name}
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-110"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                      <div className="absolute inset-0 bg-linear-to-t from-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                     </div>
                     <div className="p-4">
                       <h3 className="font-semibold text-primary mb-2 group-hover:text-gold transition-colors">

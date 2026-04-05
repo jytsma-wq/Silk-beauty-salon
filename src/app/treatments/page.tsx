@@ -6,7 +6,7 @@ import { siteConfig } from '@/data/site-config';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
-  title: 'Treatments | Harley Street Injectables',
+  title: 'Treatments | Silk Beauty Salon',
   description: 'Explore our comprehensive range of premium aesthetic treatments including Botox, dermal fillers, laser treatments, and skin treatments.',
 };
 
@@ -75,7 +75,7 @@ export default function TreatmentsPage() {
                         alt={treatment.name}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                      <div className="absolute inset-0 bg-linear-to-t from-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                     </div>
                     <div className="p-4">
                       <h3 className="font-semibold text-primary mb-2 group-hover:text-gold transition-colors">

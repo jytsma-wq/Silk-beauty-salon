@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { ChevronRight } from 'lucide-react';
 import { treatmentCategories } from '@/data/treatments';
@@ -34,12 +35,15 @@ export function TreatmentsSection() {
             >
               {/* Image */}
               <div className="relative h-64 overflow-hidden">
-                <img
+                <Image
                   src={category.image}
                   alt={category.name}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  loading={index < 3 ? 'eager' : 'lazy'}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h3 
                     className="text-xl font-serif font-semibold text-white"

@@ -22,12 +22,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   if (!treatment) {
     return {
-      title: 'Treatment Not Found | Harley Street Injectables',
+      title: 'Treatment Not Found | Silk Beauty Salon',
     };
   }
 
   return {
-    title: `${treatment.name} | Harley Street Injectables`,
+    title: `${treatment.name} | Silk Beauty Salon`,
     description: treatment.shortDescription,
   };
 }
@@ -120,7 +120,7 @@ export default async function TreatmentPage({ params }: Props) {
               </Button>
             </div>
 
-            <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+            <div className="relative aspect-4/3 rounded-lg overflow-hidden">
               <img
                 src={treatment.image}
                 alt={treatment.name}
@@ -162,7 +162,7 @@ export default async function TreatmentPage({ params }: Props) {
                   <div className="grid sm:grid-cols-2 gap-4">
                     {treatment.benefits.map((benefit, index) => (
                       <div key={index} className="flex items-start gap-3 p-4 bg-secondary rounded-lg">
-                        <Check className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-gold mt-0.5 shrink-0" />
                         <span className="text-sm">{benefit}</span>
                       </div>
                     ))}

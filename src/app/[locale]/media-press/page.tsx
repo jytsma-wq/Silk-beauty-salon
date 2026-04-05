@@ -1,11 +1,12 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronRight, ExternalLink } from 'lucide-react';
 import { siteConfig } from '@/data/site-config';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
-  title: 'Press & Media | Harley Street Injectables',
+  title: 'Press & Media | Silk Beauty Salon',
   description: 'Read our latest press coverage and media features.',
 };
 
@@ -15,35 +16,35 @@ export default function MediaPressPage() {
       publication: 'Vogue',
       title: 'The Best Aesthetic Clinics in London',
       date: 'January 2024',
-      excerpt: 'Harley Street Injectables is named as one of the top aesthetic clinics in London...',
+      excerpt: 'Silk Beauty Salon is named as one of the top aesthetic clinics in Batumi...',
       image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&q=80',
     },
     {
       publication: 'Grazia',
       title: 'The Ultimate Guide to Non-Surgical Treatments',
       date: 'December 2023',
-      excerpt: 'Expert advice from the team at Harley Street Injectables on the latest treatments...',
+      excerpt: 'Expert advice from the team at Silk Beauty Salon on the latest treatments...',
       image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&q=80',
     },
     {
       publication: 'Tatler',
       title: 'Top Beauty Clinics to Visit This Year',
       date: 'November 2023',
-      excerpt: 'Discover why Harley Street Injectables continues to be a go-to destination...',
+      excerpt: 'Discover why Silk Beauty Salon continues to be a go-to destination...',
       image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80',
     },
     {
       publication: 'Vanity Fair',
       title: 'The Rise of Natural-Looking Aesthetics',
       date: 'October 2023',
-      excerpt: 'How leading clinics like Harley Street Injectables are changing the approach...',
+      excerpt: 'How leading clinics like Silk Beauty Salon are changing the approach...',
       image: 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=400&q=80',
     },
     {
       publication: 'Harper\'s Bazaar',
       title: 'Expert Tips for Your First Treatment',
       date: 'September 2023',
-      excerpt: 'The experts at Harley Street Injectables share their advice for newcomers...',
+      excerpt: 'The experts at Silk Beauty Salon share their advice for newcomers...',
       image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&q=80',
     },
     {
@@ -92,10 +93,12 @@ export default function MediaPressPage() {
             {pressFeatures.map((feature, index) => (
               <article key={index} className="group bg-white border border-border rounded-lg overflow-hidden card-hover">
                 <div className="relative h-48 overflow-hidden">
-                  <img
+                  <Image
                     src={feature.image}
                     alt={feature.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                   <div className="absolute top-4 left-4">
                     <span className="bg-gold text-primary text-xs font-semibold px-3 py-1 rounded-full">

@@ -1,11 +1,12 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronRight, Award, Heart, Shield, Sparkles } from 'lucide-react';
 import { siteConfig } from '@/data/site-config';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
-  title: 'About Us | Harley Street Injectables',
+  title: 'About Us | Silk Beauty Salon',
   description: 'Learn about our award-winning aesthetic clinic and meet our team of expert practitioners.',
 };
 
@@ -75,20 +76,22 @@ export default function AboutPage() {
                 Our Story
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Harley Street Injectables was founded with a simple vision: to provide the highest quality aesthetic treatments in a luxurious, welcoming environment. Located on the prestigious Harley Street, our clinic brings together some of London's most talented aesthetic practitioners.
+                Silk Beauty Salon was founded with a simple vision: to provide the highest quality aesthetic treatments in a luxurious, welcoming environment. Located on Zurab Gorgiladze Street in Batumi, our clinic brings together some of Georgia's most talented aesthetic practitioners.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 We believe that everyone deserves to feel confident and beautiful. Our approach focuses on enhancing your natural features rather than changing who you are. We take pride in our subtle, refined results that help you look like the best version of yourself.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-gray-300 text-sm">
                 From the moment you step into our clinic, you'll experience the difference. Our commitment to excellence extends beyond our treatments to every aspect of your visit, from our luxurious clinic space to our warm, attentive team.
               </p>
             </div>
-            <div className="relative aspect-[4/5] rounded-lg overflow-hidden">
-              <img
+            <div className="relative aspect-4/5 rounded-lg overflow-hidden">
+              <Image
                 src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80"
-                alt="Harley Street Injectables Clinic"
-                className="w-full h-full object-cover"
+                alt="Silk Beauty Salon Clinic"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
           </div>
@@ -138,10 +141,12 @@ export default function AboutPage() {
             {siteConfig.team.map((member) => (
               <div key={member.name} className="text-center">
                 <div className="relative aspect-square rounded-lg overflow-hidden mb-4">
-                  <img
+                  <Image
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 50vw, 25vw"
                   />
                 </div>
                 <h3 className="font-serif font-semibold text-primary text-lg">{member.name}</h3>

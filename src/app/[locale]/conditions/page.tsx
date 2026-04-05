@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 import { conditions } from '@/data/conditions';
@@ -6,7 +7,7 @@ import { siteConfig } from '@/data/site-config';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
-  title: 'Conditions We Treat | Harley Street Injectables',
+  title: 'Conditions We Treat | Silk Beauty Salon',
   description: 'Learn about the various skin conditions we treat including ageing skin, acne scarring, pigmentation, and more.',
 };
 
@@ -53,12 +54,14 @@ export default function ConditionsPage() {
               >
                 <div className="grid md:grid-cols-2">
                   <div className="relative h-48 md:h-full overflow-hidden">
-                    <img
+                    <Image
                       src={condition.image}
                       alt={condition.name}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <div className="absolute inset-0 bg-linear-to-t from-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
                   <div className="p-6">
                     <h2 

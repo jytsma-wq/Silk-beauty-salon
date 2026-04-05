@@ -4,7 +4,7 @@ import { ChevronRight, Calendar, Clock } from 'lucide-react';
 import { siteConfig } from '@/data/site-config';
 
 export const metadata: Metadata = {
-  title: 'Blog | Harley Street Injectables',
+  title: 'Blog | Silk Beauty Salon',
   description: 'Read our latest articles on aesthetic treatments, skincare tips, and industry insights.',
 };
 

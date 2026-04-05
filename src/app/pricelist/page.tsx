@@ -6,7 +6,7 @@ import { siteConfig } from '@/data/site-config';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
-  title: 'Price List | Harley Street Injectables',
+  title: 'Price List | Silk Beauty Salon',
   description: 'View our comprehensive treatment price list for all our aesthetic services.',
 };
 

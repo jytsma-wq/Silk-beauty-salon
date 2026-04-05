@@ -8,12 +8,13 @@ import { TestimonialsSection } from '@/components/sections/TestimonialsSection';
 import { QuickLinksSection } from '@/components/sections/QuickLinksSection';
 import { NewsletterSection } from '@/components/sections/NewsletterSection';
 
-export default function HomePage({
+export default async function HomePage({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }) {
-  void params; // params is needed for Next.js
+  const { locale } = await params;
+  setRequestLocale(locale);
   
   return (
     <>

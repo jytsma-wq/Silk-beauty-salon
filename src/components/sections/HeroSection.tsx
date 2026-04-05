@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import { siteConfig } from '@/data/site-config';
@@ -11,12 +12,15 @@ export function HeroSection() {
   return (
     <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=1920&q=80)',
-        }}
-      >
+      <div className="absolute inset-0">
+        <Image
+          src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=1920&q=80"
+          alt="Luxury spa and beauty salon interior"
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
+        />
         {/* Overlay */}
         <div className="absolute inset-0 hero-overlay" />
       </div>

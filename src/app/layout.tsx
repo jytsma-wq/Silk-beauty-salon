@@ -16,8 +16,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Harley Street Injectables",
-  description: "London's leading non-surgical aesthetic clinic",
+  title: "Silk Beauty Salon",
+  description: "Premier beauty and aesthetic treatments in Batumi, Georgia",
 };
 
 export default function RootLayout({

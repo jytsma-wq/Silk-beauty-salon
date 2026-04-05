@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -17,11 +17,36 @@ export default function ContactPage() {
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    setSubmitted(true);
+    setLoading(true);
+    setError(null);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Something went wrong');
+      }
+
+      setSubmitted(true);
+      setFormData({ name: '', email: '', phone: '', message: '' });
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to send message');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -76,6 +101,11 @@ export default function ContactPage() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  {error && (
+                    <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+                      <p className="text-red-600 text-sm">{error}</p>
+                    </div>
+                  )}
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium mb-2">
                       Full Name *
@@ -128,8 +158,15 @@ export default function ContactPage() {
                       rows={5}
                     />
                   </div>
-                  <Button type="submit" className="btn-gold w-full sm:w-auto">
-                    Send Message
+                  <Button type="submit" className="btn-gold w-full sm:w-auto" disabled={loading}>
+                    {loading ? (
+                      <>
+                        <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                        Sending...
+                      </>
+                    ) : (
+                      'Send Message'
+                    )}
                   </Button>
                 </form>
               )}
@@ -146,7 +183,7 @@ export default function ContactPage() {
 
               <div className="space-y-6 mb-8">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
                     <MapPin className="w-6 h-6 text-gold" />
                   </div>
                   <div>
@@ -159,7 +196,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
                     <Phone className="w-6 h-6 text-gold" />
                   </div>
                   <div>
@@ -174,7 +211,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
                     <Mail className="w-6 h-6 text-gold" />
                   </div>
                   <div>

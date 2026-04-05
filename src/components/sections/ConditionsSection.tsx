@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { ChevronRight } from 'lucide-react';
 import { conditions } from '@/data/conditions';
@@ -27,21 +28,24 @@ export function ConditionsSection() {
 
         {/* Conditions Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {conditions.map((condition) => (
+          {conditions.map((condition, index) => (
             <Link
               key={condition.slug}
               href={`/conditions/${condition.slug}`}
               className="group relative overflow-hidden rounded-lg aspect-[4/3] card-hover"
             >
               {/* Background Image */}
-              <img
+              <Image
                 src={condition.image}
                 alt={condition.name}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                loading={index < 3 ? 'eager' : 'lazy'}
               />
               
               {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
+              <div className="absolute inset-0 bg-linear-to-t from-primary via-primary/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
               
               {/* Content */}
               <div className="absolute inset-0 flex flex-col justify-end p-6">

@@ -25,13 +25,13 @@ export const testimonials: Testimonial[] = [
     rating: 5
   },
   {
-    quote: "The Team at HSI are absolutely amazing! In particular, Hazel! She took the time to understand exactly what I wanted and delivered beyond my expectations. I'm a client for life now.",
+    quote: "The Team at Silk Beauty Salon are absolutely amazing! In particular, Hazel! She took the time to understand exactly what I wanted and delivered beyond my expectations. I'm a client for life now.",
     author: "Amanda K.",
     role: "Skin Treatment Client",
     rating: 5
   },
   {
-    quote: "I've been coming to Harley Street Injectables for over 3 years now. The clinic is beautiful, the staff are professional and friendly, and the results speak for themselves. Couldn't recommend more highly.",
+    quote: "I've been coming to Silk Beauty Salon for over 3 years now. The clinic is beautiful, the staff are professional and friendly, and the results speak for themselves. Couldn't recommend more highly.",
     author: "Lucy P.",
     role: "Long-term Client",
     rating: 5
@@ -55,7 +55,7 @@ export const testimonials: Testimonial[] = [
     rating: 5
   },
   {
-    quote: "The Hyperhidrosis treatment has changed my life. I suffered with excessive sweating for years and now I finally feel confident again. Thank you so much to the wonderful team at HSI.",
+    quote: "The Hyperhidrosis treatment has changed my life. I suffered with excessive sweating for years and now I finally feel confident again. Thank you so much to the wonderful team at Silk Beauty Salon.",
     author: "David B.",
     role: "Hyperhidrosis Client",
     rating: 5

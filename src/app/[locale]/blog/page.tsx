@@ -1,10 +1,11 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronRight, Calendar, Clock } from 'lucide-react';
 import { siteConfig } from '@/data/site-config';
 
 export const metadata: Metadata = {
-  title: 'Blog | Harley Street Injectables',
+  title: 'Blog | Silk Beauty Salon',
   description: 'Read our latest articles on aesthetic treatments, skincare tips, and industry insights.',
 };
 
@@ -103,10 +104,12 @@ export default function BlogPage() {
             {blogPosts.map((post) => (
               <article key={post.slug} className="group bg-white border border-border rounded-lg overflow-hidden card-hover">
                 <div className="relative h-52 overflow-hidden">
-                  <img
+                  <Image
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                   <div className="absolute top-4 left-4">
                     <span className="bg-gold text-primary text-xs font-semibold px-3 py-1 rounded-full">
