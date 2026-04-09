@@ -2,23 +2,25 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import type { Metadata } from "next";
-import { Playfair_Display, Poppins } from "next/font/google";
+import { Cormorant_Garamond, Inter } from "next/font/google";
 import "../globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { ConsentProvider } from "@/components/providers/ConsentProvider";
+import { AnalyticsScripts } from "@/components/providers/AnalyticsScripts";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const display = Cormorant_Garamond({
   subsets: ["latin"],
+  weight: ["300", "400", "600"],
   display: "swap",
+  variable: "--font-display",
 });
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const body = Inter({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
+  variable: "--font-body",
 });
 
 export const metadata: Metadata = {
@@ -58,15 +60,18 @@ export default async function LocaleLayout({
   return (
     <html lang={validLocale} suppressHydrationWarning className="scroll-smooth" dir={isRtl ? 'rtl' : 'ltr'}>
       <body
-        className={`${playfair.variable} ${poppins.variable} antialiased bg-background text-foreground`}
-        style={{ fontFamily: "var(--font-poppins), sans-serif" }}
+        className={`${display.variable} ${body.variable} antialiased bg-background text-foreground`}
+        style={{ fontFamily: "var(--font-body), sans-serif" }}
       >
-        <NextIntlClientProvider messages={messages}>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <Toaster />
-        </NextIntlClientProvider>
+        <ConsentProvider>
+          <AnalyticsScripts />
+          <NextIntlClientProvider messages={messages}>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+            <Toaster />
+          </NextIntlClientProvider>
+        </ConsentProvider>
       </body>
     </html>
   );
